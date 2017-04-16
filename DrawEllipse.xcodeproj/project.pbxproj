@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2325A7FF1EA36FAC00980C97 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2325A7FE1EA36FAC00980C97 /* default.jpg */; };
+		2325A8051EA37B2600980C97 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2325A8041EA37B2600980C97 /* UIImage+Utility.m */; };
 		C351653E1EA0A634006AC63E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C351653D1EA0A634006AC63E /* main.m */; };
 		C35165411EA0A634006AC63E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C35165401EA0A634006AC63E /* AppDelegate.m */; };
 		C35165441EA0A634006AC63E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35165431EA0A634006AC63E /* ViewController.m */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2325A7FE1EA36FAC00980C97 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		2325A8031EA37B2600980C97 /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		2325A8041EA37B2600980C97 /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
 		C35165391EA0A634006AC63E /* DrawEllipse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawEllipse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C351653D1EA0A634006AC63E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C351653F1EA0A634006AC63E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 		C351653C1EA0A634006AC63E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2325A7FE1EA36FAC00980C97 /* default.jpg */,
 				C351653F1EA0A634006AC63E /* AppDelegate.h */,
 				C35165401EA0A634006AC63E /* AppDelegate.m */,
 				C35165481EA0A634006AC63E /* Assets.xcassets */,
@@ -96,6 +102,8 @@
 		C35165621EA0F3FB006AC63E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2325A8031EA37B2600980C97 /* UIImage+Utility.h */,
+				2325A8041EA37B2600980C97 /* UIImage+Utility.m */,
 				C351655F1EA0F355006AC63E /* UIView+Frame.h */,
 				C35165601EA0F355006AC63E /* UIView+Frame.m */,
 			);
@@ -164,6 +172,7 @@
 				C351654C1EA0A634006AC63E /* LaunchScreen.storyboard in Resources */,
 				C35165491EA0A634006AC63E /* Assets.xcassets in Resources */,
 				C35165471EA0A634006AC63E /* Main.storyboard in Resources */,
+				2325A7FF1EA36FAC00980C97 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35165611EA0F355006AC63E /* UIView+Frame.m in Sources */,
+				2325A8051EA37B2600980C97 /* UIImage+Utility.m in Sources */,
 				C35165441EA0A634006AC63E /* ViewController.m in Sources */,
 				C351655B1EA0E80A006AC63E /* YFImageEditorViewController.m in Sources */,
 				C35165411EA0A634006AC63E /* AppDelegate.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "YFImageEditorViewController.h"
+#import "UIImage+Utility.h"
 
 @interface YFImageEditorViewController ()
 <UINavigationBarDelegate>
@@ -14,11 +15,49 @@
 @end
 
 @implementation YFImageEditorViewController
+{
+    UIImage *_originalImage;
+    UIView *_bgView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.clipsToBounds = YES;
+    self.navigationController.view.backgroundColor = self.view.backgroundColor;
+    
+    if([self respondsToSelector:@selector(automaticallyAdjustsScrollViewInsets)]){
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
+    if([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]){
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
+    
     [self initNavigationBar];
+    
+    if(_imageView==nil){
+        _imageView = [UIImageView new];
+        [_scrollView addSubview:_imageView];
+//        [self refreshImageView];
+    }
+}
+
+- (id)init{
+    self = [self initWithNibName:nil bundle:nil];
+    return self;
+}
+
+- (id)initWithImage:(UIImage *)image{
+    return [self initWithImage:image delegate:nil];
+}
+
+- (id)initWithImage:(UIImage*)image delegate:(id<YFImageEditorDelegate>)delegate{
+    self = [self init];
+    if (self){
+        _originalImage = [image deepCopy];
+        self.delegate = delegate;
+    }
+    return self;
 }
 
 
@@ -44,9 +83,23 @@
         _navigationBar = navigationBar;
     }
     
-    //TODO
-//    if(self.navigationController!=nil){
+    if(self.navigationController!=nil){
+        self.navigationBar.frame = self.navigationController.navigationBar.frame;
+        self.navigationBar.hidden = YES;
+    }else {
+        _navigationBar.topItem.title = self.title;
+    }
+        
 }
 
+#pragma mark Menu actions
+
+- (IBAction)pushedDoneBtn:(id)sender{
+
+}
+
+- (void)pushedFinishBtn:(id)sender{
+    
+}
 
 @end

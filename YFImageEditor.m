@@ -7,6 +7,7 @@
 //
 
 #import "YFImageEditor.h"
+#import "YFImageEditorViewController.h"
 
 @interface YFImageEditor ()
 
@@ -14,24 +15,24 @@
 
 @implementation YFImageEditor
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (id)init {
+    return [YFImageEditorViewController new];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (id)initWithImage:(UIImage*)image{
+    return [self initWithImage:image delegate:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (id)initWithImage:(UIImage*)image delegate:(id<YFImageEditorDelegate>)delegate{
+    return [[YFImageEditorViewController alloc] initWithImage:image delegate:delegate];
 }
-*/
+
+- (id)initWithDelegate:(id<YFImageEditorDelegate>)delegate {
+    return [[YFImageEditorViewController alloc]initWithDelegate:delegate];
+}
+
+- (void)showInViewController:(UIViewController<YFImageEditorTransitionDelegate>*)controller withImageView:(UIImageView*)imageView{
+    
+}
 
 @end

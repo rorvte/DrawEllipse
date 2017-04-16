@@ -39,7 +39,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="342" height="409"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5l2-JJ-g78">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5l2-JJ-g78">
                                                 <rect key="frame" x="0.0" y="8" width="209" height="268"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -64,6 +64,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="default.jpg" width="1280" height="2000"/>
         <image name="edit" width="30" height="30"/>
         <image name="new" width="30" height="30"/>
         <image name="save" width="30" height="30"/>

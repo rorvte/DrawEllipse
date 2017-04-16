@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "YFImageEditor.h"
 
 @interface ViewController ()
-
+<YFImageEditorDelegate,YFImageEditorTransitionDelegate>
 @end
 
 @implementation ViewController
@@ -25,14 +26,14 @@
     
 }
 
-- (void)pushedEditBtn
-{
-    if(_imageView.image){
-        NSLog(@"image");
-    }
-    else{
-        [self pushedNewBtn];
-    }
+- (void)pushedEditBtn {
+//    if(_imageView.image){
+        YFImageEditor *editor = [[YFImageEditor alloc]initWithImage:self.imageView.image delegate:self];
+        [self presentViewController:editor animated:YES completion:nil];
+//    }
+//    else{
+//        [self pushedNewBtn];
+//    }
 }
 
 - (void)pushedSaveBtn{
