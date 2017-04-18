@@ -34,6 +34,7 @@
     }
     
     [self initNavigationBar];
+    [self initMenuScrollView];
     
     if(_imageView==nil){
         _imageView = [UIImageView new];
@@ -90,6 +91,20 @@
         _navigationBar.topItem.title = self.title;
     }
         
+}
+
+- (void)initMenuScrollView {
+    if(self.menuView==nil){
+        UIScrollView *menuScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 80)];
+        menuScroll.top = self.view.height - menuScroll.height;
+        menuScroll.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+        menuScroll.showsHorizontalScrollIndicator = NO;
+        menuScroll.showsVerticalScrollIndicator = NO;
+        
+        [self.view addSubview:menuScroll];
+        self.menuView = menuScroll;
+    }
+    self.menuView.backgroundColor = [UIColor blueColor];
 }
 
 #pragma mark Menu actions

@@ -14,8 +14,8 @@
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
 @property (nonatomic) UIImageView *imageView;
+@property (nonatomic) UIScrollView *menuView;
 @property (nonatomic) UIScrollView *scrollView;
-@property (nonatomic) UIScrollView *scrollVIew;
 
 -(IBAction)pushedCloseBtn:(id)sender;
 -(IBAction)pushedFinishBtn:(id)sender;
