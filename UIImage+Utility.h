@@ -10,6 +10,7 @@
 
 @interface UIImage (Utility)
 
++ (UIImage*)fastImageWithContentsOfFile:(NSString*)path;
 - (UIImage*)deepCopy;
 
 @end

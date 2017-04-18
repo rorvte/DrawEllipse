@@ -7,10 +7,13 @@
 //
 
 #import "YFImageEditorViewController.h"
+#import "YFImageToolBase.h"
 #import "UIImage+Utility.h"
+
 
 @interface YFImageEditorViewController ()
 <UINavigationBarDelegate>
+@property (nonatomic, strong, readwrite) YFImageToolInfo *toolInfo;
 @property (nonatomic, strong) UIImageView *targetImageView;
 @end
 
@@ -105,6 +108,35 @@
         self.menuView = menuScroll;
     }
     self.menuView.backgroundColor = [UIColor blueColor];
+}
+
+- (void)refreshToolSettings {
+    for (UIView* subs in _menuView.subviews){[subs removeFromSuperview];}
+    
+    CGFloat X = 0;
+    CGFloat W = 70;
+    CGFloat H = _menuView.height;
+    
+    int toolCount = 0;
+    CGFloat padding = 0;
+    
+    for(YFImageToolInfo *info in self.toolInfo.storedSubTools) {
+        if(info.available) {toolCount++;}
+    }
+    
+    CGFloat diff = _menuView.frame.size.width - toolCount * W;
+    if (0<diff && diff<2*W) {
+        padding = diff/(toolCount+1);
+    }
+    
+    for(YFImageToolInfo *info in self.toolInfo.storedSubTools) {
+        if(!info.available) {
+            continue;
+        }
+    }
+    
+    
+    
 }
 
 #pragma mark Menu actions

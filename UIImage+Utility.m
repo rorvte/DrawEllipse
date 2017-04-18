@@ -25,6 +25,12 @@
     return image;
 }
 
++ (UIImage*)fastImageWithContentsOfFile:(NSString*)path
+{
+    UIImage *image = [[UIImage alloc] initWithContentsOfFile:path];
+    return [self decode:image];
+}
+
 #pragma mark- Copy
 
 - (UIImage*)deepCopy
