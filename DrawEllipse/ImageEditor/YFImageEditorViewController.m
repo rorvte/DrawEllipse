@@ -115,22 +115,21 @@
 
 #pragma mark- ImageTool setting
 
-+ (NSString*)defaultIconImagePath
-{
++ (NSString*)defaultIconImagePath{
     return nil;
 }
 
-+ (CGFloat)defaultDockedNumber
-{
++ (CGFloat)defaultDockedNumber{
     return 0;
 }
 
 + (NSString*)defaultTitle{
-    return [CLImageEditorTheme localizedString:@"CLImageEditor_DefaultTitle" withDefault:@"Edit"];
+    
+    //NEED Change
+    return nil;
 }
 
-+ (BOOL)isAvailable
-{
++ (BOOL)isAvailable{
     return YES;
 }
 
@@ -183,8 +182,7 @@
     
 }
 
-- (void)tappedMenuView:(UITapGestureRecognizer*)sender
-{
+- (void)tappedMenuView:(UITapGestureRecognizer*)sender{
     UIView *view = sender.view;
     
     view.alpha = 0.2;

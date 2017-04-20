@@ -12,6 +12,7 @@
 #import "UIView+Frame.h"
 #import "UIImage+Utility.h"
 #import "YFImageToolProtocol.h"
+#import "YFImageToolInfo+Private.h"
 
 @interface YFImageToolBase : NSObject<YFImageToolProtocol>
 

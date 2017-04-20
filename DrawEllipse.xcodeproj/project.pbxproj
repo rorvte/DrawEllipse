@@ -22,6 +22,8 @@
 		C35165471EA0A634006AC63E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35165451EA0A634006AC63E /* Main.storyboard */; };
 		C35165491EA0A634006AC63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35165481EA0A634006AC63E /* Assets.xcassets */; };
 		C351654C1EA0A634006AC63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C351654A1EA0A634006AC63E /* LaunchScreen.storyboard */; };
+		C36834881EA8DFA700CF1D65 /* YFImageToolInfo+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C36834871EA8DFA700CF1D65 /* YFImageToolInfo+Private.m */; };
+		C368348B1EA8E15C00CF1D65 /* YFClassList.m in Sources */ = {isa = PBXBuildFile; fileRef = C368348A1EA8E15C00CF1D65 /* YFClassList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,10 @@
 		C35165481EA0A634006AC63E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C351654B1EA0A634006AC63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C351654D1EA0A634006AC63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36834861EA8DFA700CF1D65 /* YFImageToolInfo+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YFImageToolInfo+Private.h"; path = "DrawEllipse/ImageEditor/YFImageToolInfo+Private.h"; sourceTree = "<group>"; };
+		C36834871EA8DFA700CF1D65 /* YFImageToolInfo+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "YFImageToolInfo+Private.m"; path = "DrawEllipse/ImageEditor/YFImageToolInfo+Private.m"; sourceTree = "<group>"; };
+		C36834891EA8E15C00CF1D65 /* YFClassList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YFClassList.h; path = DrawEllipse/Utils/YFClassList.h; sourceTree = "<group>"; };
+		C368348A1EA8E15C00CF1D65 /* YFClassList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YFClassList.m; path = DrawEllipse/Utils/YFClassList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,8 @@
 				C326A5931EA8752800C4A02B /* UIImage+Utility.m */,
 				C326A5941EA8752800C4A02B /* UIView+Frame.h */,
 				C326A5951EA8752800C4A02B /* UIView+Frame.m */,
+				C36834891EA8E15C00CF1D65 /* YFClassList.h */,
+				C368348A1EA8E15C00CF1D65 /* YFClassList.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -136,6 +144,8 @@
 				C326A5A21EA8757900C4A02B /* YFToolbarMenuItem.m */,
 				C326A5A81EA87E6B00C4A02B /* UIView+YFImageToolInfo.h */,
 				C326A5A91EA87E6B00C4A02B /* UIView+YFImageToolInfo.m */,
+				C36834861EA8DFA700CF1D65 /* YFImageToolInfo+Private.h */,
+				C36834871EA8DFA700CF1D65 /* YFImageToolInfo+Private.m */,
 			);
 			name = ImageEditor;
 			sourceTree = "<group>";
@@ -219,10 +229,12 @@
 				C351653E1EA0A634006AC63E /* main.m in Sources */,
 				C326A5A61EA8757900C4A02B /* YFImageToolInfo.m in Sources */,
 				C326A5AA1EA87E6B00C4A02B /* UIView+YFImageToolInfo.m in Sources */,
+				C368348B1EA8E15C00CF1D65 /* YFClassList.m in Sources */,
 				C326A5961EA8752800C4A02B /* UIImage+Utility.m in Sources */,
 				C326A5971EA8752800C4A02B /* UIView+Frame.m in Sources */,
 				C326A5A31EA8757900C4A02B /* YFImageEditor.m in Sources */,
 				C326A5A71EA8757900C4A02B /* YFToolbarMenuItem.m in Sources */,
+				C36834881EA8DFA700CF1D65 /* YFImageToolInfo+Private.m in Sources */,
 				C326A5A51EA8757900C4A02B /* YFImageToolBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
