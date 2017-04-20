@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YFImageToolInfo.h"
+#import "UIView+YFImageToolInfo.h"
 #import "UIView+Frame.h"
 
 @interface YFToolbarMenuItem : UIView

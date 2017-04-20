@@ -15,6 +15,7 @@
 		C326A5A51EA8757900C4A02B /* YFImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A59D1EA8757900C4A02B /* YFImageToolBase.m */; };
 		C326A5A61EA8757900C4A02B /* YFImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A59F1EA8757900C4A02B /* YFImageToolInfo.m */; };
 		C326A5A71EA8757900C4A02B /* YFToolbarMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A5A21EA8757900C4A02B /* YFToolbarMenuItem.m */; };
+		C326A5AA1EA87E6B00C4A02B /* UIView+YFImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A5A91EA87E6B00C4A02B /* UIView+YFImageToolInfo.m */; };
 		C351653E1EA0A634006AC63E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C351653D1EA0A634006AC63E /* main.m */; };
 		C35165411EA0A634006AC63E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C35165401EA0A634006AC63E /* AppDelegate.m */; };
 		C35165441EA0A634006AC63E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35165431EA0A634006AC63E /* ViewController.m */; };
@@ -40,6 +41,8 @@
 		C326A5A01EA8757900C4A02B /* YFImageToolProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YFImageToolProtocol.h; path = DrawEllipse/ImageEditor/YFImageToolProtocol.h; sourceTree = "<group>"; };
 		C326A5A11EA8757900C4A02B /* YFToolbarMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YFToolbarMenuItem.h; path = DrawEllipse/ImageEditor/YFToolbarMenuItem.h; sourceTree = "<group>"; };
 		C326A5A21EA8757900C4A02B /* YFToolbarMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YFToolbarMenuItem.m; path = DrawEllipse/ImageEditor/YFToolbarMenuItem.m; sourceTree = "<group>"; };
+		C326A5A81EA87E6B00C4A02B /* UIView+YFImageToolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+YFImageToolInfo.h"; path = "DrawEllipse/ImageEditor/UIView+YFImageToolInfo.h"; sourceTree = "<group>"; };
+		C326A5A91EA87E6B00C4A02B /* UIView+YFImageToolInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+YFImageToolInfo.m"; path = "DrawEllipse/ImageEditor/UIView+YFImageToolInfo.m"; sourceTree = "<group>"; };
 		C35165391EA0A634006AC63E /* DrawEllipse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawEllipse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C351653D1EA0A634006AC63E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C351653F1EA0A634006AC63E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				C326A5A01EA8757900C4A02B /* YFImageToolProtocol.h */,
 				C326A5A11EA8757900C4A02B /* YFToolbarMenuItem.h */,
 				C326A5A21EA8757900C4A02B /* YFToolbarMenuItem.m */,
+				C326A5A81EA87E6B00C4A02B /* UIView+YFImageToolInfo.h */,
+				C326A5A91EA87E6B00C4A02B /* UIView+YFImageToolInfo.m */,
 			);
 			name = ImageEditor;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				C326A5A41EA8757900C4A02B /* YFImageEditorViewController.m in Sources */,
 				C351653E1EA0A634006AC63E /* main.m in Sources */,
 				C326A5A61EA8757900C4A02B /* YFImageToolInfo.m in Sources */,
+				C326A5AA1EA87E6B00C4A02B /* UIView+YFImageToolInfo.m in Sources */,
 				C326A5961EA8752800C4A02B /* UIImage+Utility.m in Sources */,
 				C326A5971EA8752800C4A02B /* UIView+Frame.m in Sources */,
 				C326A5A31EA8757900C4A02B /* YFImageEditor.m in Sources */,

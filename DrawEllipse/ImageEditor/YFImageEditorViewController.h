@@ -7,7 +7,7 @@
 //
 
 #import "YFImageEditor.h"
-#import "../UIView+Frame.h"
+#import "UIView+Frame.h"
 
 @interface YFImageEditorViewController : YFImageEditor
 <UIScrollViewDelegate, UIBarPositioningDelegate>

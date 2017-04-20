@@ -7,6 +7,7 @@
 //
 
 #import "YFImageEditorViewController.h"
+#import "YFToolbarMenuItem.h"
 #import "YFImageToolBase.h"
 #import "UIImage+Utility.h"
 
@@ -14,6 +15,7 @@
 @interface YFImageEditorViewController ()
 <UINavigationBarDelegate>
 @property (nonatomic, strong, readwrite) YFImageToolInfo *toolInfo;
+@property (nonatomic,strong) YFImageToolBase *currentTool;
 @property (nonatomic, strong) UIImageView *targetImageView;
 @end
 
@@ -38,6 +40,7 @@
     
     [self initNavigationBar];
     [self initMenuScrollView];
+    [self refreshToolSettings];
     
     if(_imageView==nil){
         _imageView = [UIImageView new];
@@ -110,6 +113,36 @@
     self.menuView.backgroundColor = [UIColor blueColor];
 }
 
+#pragma mark- ImageTool setting
+
++ (NSString*)defaultIconImagePath
+{
+    return nil;
+}
+
++ (CGFloat)defaultDockedNumber
+{
+    return 0;
+}
+
++ (NSString*)defaultTitle{
+    return [CLImageEditorTheme localizedString:@"CLImageEditor_DefaultTitle" withDefault:@"Edit"];
+}
+
++ (BOOL)isAvailable
+{
+    return YES;
+}
+
++ (NSArray*)subtools{
+    return [YFImageToolInfo toolsWithToolClass:[YFImageToolBase class]];
+}
+
++ (NSDictionary*)optionalInfo{
+    return nil;
+}
+
+#pragma mark-
 - (void)refreshToolSettings {
     for (UIView* subs in _menuView.subviews){[subs removeFromSuperview];}
     
@@ -133,10 +166,11 @@
         if(!info.available) {
             continue;
         }
+        YFToolbarMenuItem *view = [[YFToolbarMenuItem alloc]initWithFrame:CGRectMake(X+padding, 0, W, H) target:self action:@selector(tappedMenuView:) toolInfo:info];
+        [_menuView addSubview:view];
+        X += W+padding;
     }
-    
-    
-    
+    _menuView.contentSize = CGSizeMake(MAX(X, _menuView.frame.size.width+1), 0);
 }
 
 #pragma mark Menu actions
@@ -147,6 +181,34 @@
 
 - (void)pushedFinishBtn:(id)sender{
     
+}
+
+- (void)tappedMenuView:(UITapGestureRecognizer*)sender
+{
+    UIView *view = sender.view;
+    
+    view.alpha = 0.2;
+    [UIView animateWithDuration:0.3
+                     animations:^{
+                         view.alpha = 1;
+                     }
+     ];
+    
+    [self setupToolWithToolInfo:view.toolInfo];
+}
+
+- (void)setupToolWithToolInfo:(YFImageToolInfo*)info {
+    if(self.currentTool){ return; }
+    
+    Class toolClass = NSClassFromString(info.toolName);
+    
+    if(toolClass){
+        id instance = [toolClass alloc];
+        if(instance!=nil && [instance isKindOfClass:[YFImageToolBase class]]){
+            instance = [instance initWithImageEditor:self withToolInfo:info];
+            self.currentTool = instance;
+        }
+    }
 }
 
 @end

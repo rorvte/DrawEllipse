@@ -61,7 +61,7 @@
     if(selected != _selected){
         _selected = selected;
         if(selected){
-            self.backgroundColor = [YFImageEditorTheme toolbarSelectedButtonColor];
+            self.backgroundColor = [UIColor blueColor];
         }
         else{
             self.backgroundColor = [UIColor clearColor];
