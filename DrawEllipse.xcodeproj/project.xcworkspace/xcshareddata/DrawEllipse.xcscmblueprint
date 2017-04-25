@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4CE2BF4DA54D1A26B65E018B7D88ED3316F9B410",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4CE2BF4DA54D1A26B65E018B7D88ED3316F9B410" : 9223372036854775807,
+    "7E3BF325ACA24920B64880B6AEE703826780C2BC" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F792E0AD-3338-489F-82AD-E396D3A2B905",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4CE2BF4DA54D1A26B65E018B7D88ED3316F9B410" : "DrawEllipse\/",
+    "7E3BF325ACA24920B64880B6AEE703826780C2BC" : "CLImageEditor\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DrawEllipse",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DrawEllipse.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rorvte\/DrawEllipse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4CE2BF4DA54D1A26B65E018B7D88ED3316F9B410"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yackle\/CLImageEditor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7E3BF325ACA24920B64880B6AEE703826780C2BC"
+    }
+  ]
+}

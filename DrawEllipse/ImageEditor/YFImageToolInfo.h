@@ -17,12 +17,12 @@
 @property (nonatomic, assign)   CGFloat   dockedNumber;
 @property (nonatomic, strong)   NSString *iconImagePath;
 @property (nonatomic, readonly) UIImage  *iconImage;
-@property (nonatomic, readonly) NSArray  *subTools;
+@property (nonatomic, readonly) NSArray  *subtools;
 @property (nonatomic, strong) NSMutableDictionary *optionalInfo;
 
 - (NSString*)toolTreeDescription;
-- (NSArray*)storedSubTools;
+- (NSArray*)storedSubtools;
 
-- (YFImageToolInfo *)subToolInfoWithToolName:(NSString *)toolName recursive:(BOOL)recursive;
+- (YFImageToolInfo *)subtoolInfoWithToolName:(NSString *)toolName recursive:(BOOL)recursive;
 
 @end

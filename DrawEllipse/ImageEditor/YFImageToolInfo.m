@@ -12,7 +12,7 @@
 @interface YFImageToolInfo()
 
 @property (nonatomic,strong) NSString *toolName;
-@property (nonatomic,strong) NSArray *subTools;
+@property (nonatomic,strong) NSArray *subtools;
 
 @end
 
@@ -26,7 +26,7 @@
 
 - (NSDictionary*)descriptionDictionary {
     NSMutableArray *array = [NSMutableArray array];
-    for(YFImageToolInfo *sub in self.storedSubTools){
+    for(YFImageToolInfo *sub in self.storedSubtools){
         [array addObject:sub.descriptionDictionary];
     }
     
@@ -36,7 +36,7 @@
     [self setObject:((self.available)?@"YES":@"NO") forKey:@"available" inDictionary:dict];
     [self setObject:@(self.dockedNumber) forKey:@"dockedNumber" inDictionary:dict];
     [self setObject:self.iconImagePath forKey:@"iconImagePath" inDictionary:dict];
-    [self setObject:array forKey:@"subTools" inDictionary:dict];
+    [self setObject:array forKey:@"subtools" inDictionary:dict];
     if(self.optionalInfo){
         [self setObject:self.optionalInfo forKey:@"optionalInfo" inDictionary:dict];
     }
@@ -52,7 +52,7 @@
     
     NSString *str = [NSString stringWithFormat:@"%@%@\n", space,self.toolName];
     space = [NSString stringWithFormat:@"    %@", space];
-    for (YFImageToolInfo *sub in self.storedSubTools) {
+    for (YFImageToolInfo *sub in self.storedSubtools) {
         str = [str stringByAppendingFormat:@"%@", [sub toolTreeDescriptionWithSpace:space]];
     }
     return str;
@@ -73,8 +73,8 @@
     return _toolName;
 }
 
-- (NSArray*)storedSubTools {
-    self.subTools = [self.subTools sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
+- (NSArray*)storedSubtools {
+    self.subtools = [self.subtools sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
         CGFloat dockedNum1 = [obj1 dockedNumber];
         CGFloat dockedNum2 = [obj2 dockedNumber];
         
@@ -82,18 +82,18 @@
         if(dockedNum1 > dockedNum2){return NSOrderedDescending;}
         return NSOrderedSame;
     }];
-    return self.subTools;
+    return self.subtools;
 }
 
-- (YFImageToolInfo *)subToolInfoWithToolName:(NSString *)toolName recursive:(BOOL)recursive{
+- (YFImageToolInfo *)subtoolInfoWithToolName:(NSString *)toolName recursive:(BOOL)recursive{
     YFImageToolInfo *result = nil;
-    for(YFImageToolInfo *sub in self.subTools){
+    for(YFImageToolInfo *sub in self.subtools){
         if([sub.toolName isEqualToString:toolName]){
             result = sub;
             break;
         }
         if(recursive){
-            result = [sub subToolInfoWithToolName:toolName recursive:recursive];
+            result = [sub subtoolInfoWithToolName:toolName recursive:recursive];
             if(result){
                 break;
             }

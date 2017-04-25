@@ -61,7 +61,7 @@
     if(selected != _selected){
         _selected = selected;
         if(selected){
-            self.backgroundColor = [UIColor blueColor];
+            self.backgroundColor = [UIColor redColor];
         }
         else{
             self.backgroundColor = [UIColor clearColor];

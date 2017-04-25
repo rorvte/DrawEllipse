@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2325A7FF1EA36FAC00980C97 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2325A7FE1EA36FAC00980C97 /* default.jpg */; };
+		233204B21EAE618900B8CEC4 /* CLRotateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 233204B11EAE618900B8CEC4 /* CLRotateTool.m */; };
+		233204B81EAFA88900B8CEC4 /* CLImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 233204B71EAFA88900B8CEC4 /* CLImageEditorTheme.m */; };
 		C326A5961EA8752800C4A02B /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A5931EA8752800C4A02B /* UIImage+Utility.m */; };
 		C326A5971EA8752800C4A02B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A5951EA8752800C4A02B /* UIView+Frame.m */; };
 		C326A5A31EA8757900C4A02B /* YFImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A5991EA8757900C4A02B /* YFImageEditor.m */; };
@@ -28,6 +30,10 @@
 
 /* Begin PBXFileReference section */
 		2325A7FE1EA36FAC00980C97 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		233204B01EAE618900B8CEC4 /* CLRotateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRotateTool.h; sourceTree = "<group>"; };
+		233204B11EAE618900B8CEC4 /* CLRotateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRotateTool.m; sourceTree = "<group>"; };
+		233204B61EAFA88900B8CEC4 /* CLImageEditorTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLImageEditorTheme.h; path = ../CLImageEditor/CLImageEditor/CLImageEditorTheme.h; sourceTree = "<group>"; };
+		233204B71EAFA88900B8CEC4 /* CLImageEditorTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLImageEditorTheme.m; path = ../CLImageEditor/CLImageEditor/CLImageEditorTheme.m; sourceTree = "<group>"; };
 		C326A5921EA8752800C4A02B /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Utility.h"; path = "DrawEllipse/Utils/UIImage+Utility.h"; sourceTree = "<group>"; };
 		C326A5931EA8752800C4A02B /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Utility.m"; path = "DrawEllipse/Utils/UIImage+Utility.m"; sourceTree = "<group>"; };
 		C326A5941EA8752800C4A02B /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "DrawEllipse/Utils/UIView+Frame.h"; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 		C35165301EA0A634006AC63E = {
 			isa = PBXGroup;
 			children = (
+				233204B61EAFA88900B8CEC4 /* CLImageEditorTheme.h */,
+				233204B71EAFA88900B8CEC4 /* CLImageEditorTheme.m */,
 				C35165631EA5D00F006AC63E /* ImageEditor */,
 				C35165621EA0F3FB006AC63E /* Utils */,
 				C351653B1EA0A634006AC63E /* DrawEllipse */,
@@ -146,6 +154,8 @@
 				C326A5A91EA87E6B00C4A02B /* UIView+YFImageToolInfo.m */,
 				C36834861EA8DFA700CF1D65 /* YFImageToolInfo+Private.h */,
 				C36834871EA8DFA700CF1D65 /* YFImageToolInfo+Private.m */,
+				233204B01EAE618900B8CEC4 /* CLRotateTool.h */,
+				233204B11EAE618900B8CEC4 /* CLRotateTool.m */,
 			);
 			name = ImageEditor;
 			sourceTree = "<group>";
@@ -228,12 +238,14 @@
 				C326A5A41EA8757900C4A02B /* YFImageEditorViewController.m in Sources */,
 				C351653E1EA0A634006AC63E /* main.m in Sources */,
 				C326A5A61EA8757900C4A02B /* YFImageToolInfo.m in Sources */,
+				233204B21EAE618900B8CEC4 /* CLRotateTool.m in Sources */,
 				C326A5AA1EA87E6B00C4A02B /* UIView+YFImageToolInfo.m in Sources */,
 				C368348B1EA8E15C00CF1D65 /* YFClassList.m in Sources */,
 				C326A5961EA8752800C4A02B /* UIImage+Utility.m in Sources */,
 				C326A5971EA8752800C4A02B /* UIView+Frame.m in Sources */,
 				C326A5A31EA8757900C4A02B /* YFImageEditor.m in Sources */,
 				C326A5A71EA8757900C4A02B /* YFToolbarMenuItem.m in Sources */,
+				233204B81EAFA88900B8CEC4 /* CLImageEditorTheme.m in Sources */,
 				C36834881EA8DFA700CF1D65 /* YFImageToolInfo+Private.m in Sources */,
 				C326A5A51EA8757900C4A02B /* YFImageToolBase.m in Sources */,
 			);

@@ -152,7 +152,7 @@
     int toolCount = 0;
     CGFloat padding = 0;
     
-    for(YFImageToolInfo *info in self.toolInfo.storedSubTools) {
+    for(YFImageToolInfo *info in self.toolInfo.storedSubtools) {
         if(info.available) {toolCount++;}
     }
     
@@ -161,7 +161,7 @@
         padding = diff/(toolCount+1);
     }
     
-    for(YFImageToolInfo *info in self.toolInfo.storedSubTools) {
+    for(YFImageToolInfo *info in self.toolInfo.storedSubtools) {
         if(!info.available) {
             continue;
         }
