@@ -7,7 +7,11 @@
     "4CE2BF4DA54D1A26B65E018B7D88ED3316F9B410" : 9223372036854775807,
     "7E3BF325ACA24920B64880B6AEE703826780C2BC" : 9223372036854775807
   },
+<<<<<<< Updated upstream
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F792E0AD-3338-489F-82AD-E396D3A2B905",
+=======
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FD69E90B-C42D-4C0D-90E7-A381C8A753EE",
+>>>>>>> Stashed changes
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "4CE2BF4DA54D1A26B65E018B7D88ED3316F9B410" : "DrawEllipse\/",
     "7E3BF325ACA24920B64880B6AEE703826780C2BC" : "CLImageEditor\/"

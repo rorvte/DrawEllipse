@@ -149,12 +149,18 @@
     CGFloat W = 70;
     CGFloat H = _menuView.height;
     
-    int toolCount = 0;
+    int toolCount = 13;
     CGFloat padding = 0;
     
+<<<<<<< Updated upstream
     for(YFImageToolInfo *info in self.toolInfo.storedSubtools) {
         if(info.available) {toolCount++;}
     }
+=======
+//    for(YFImageToolInfo *info in self.toolInfo.storedSubTools) {
+//        if(info.available) {toolCount++;}
+//    }
+>>>>>>> Stashed changes
     
     CGFloat diff = _menuView.frame.size.width - toolCount * W;
     if (0<diff && diff<2*W) {

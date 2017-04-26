@@ -26,6 +26,12 @@
 		C351654C1EA0A634006AC63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C351654A1EA0A634006AC63E /* LaunchScreen.storyboard */; };
 		C36834881EA8DFA700CF1D65 /* YFImageToolInfo+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C36834871EA8DFA700CF1D65 /* YFImageToolInfo+Private.m */; };
 		C368348B1EA8E15C00CF1D65 /* YFClassList.m in Sources */ = {isa = PBXBuildFile; fileRef = C368348A1EA8E15C00CF1D65 /* YFClassList.m */; };
+		C36834931EA9C86B00CF1D65 /* CLAdjustmentTool in Resources */ = {isa = PBXBuildFile; fileRef = C368348D1EA9C86B00CF1D65 /* CLAdjustmentTool */; };
+		C36834941EA9C86B00CF1D65 /* CLBlurTool in Resources */ = {isa = PBXBuildFile; fileRef = C368348E1EA9C86B00CF1D65 /* CLBlurTool */; };
+		C36834951EA9C86B00CF1D65 /* CLClippingTool in Resources */ = {isa = PBXBuildFile; fileRef = C368348F1EA9C86B00CF1D65 /* CLClippingTool */; };
+		C36834961EA9C86B00CF1D65 /* CLDrawTool in Resources */ = {isa = PBXBuildFile; fileRef = C36834901EA9C86B00CF1D65 /* CLDrawTool */; };
+		C36834971EA9C86B00CF1D65 /* CLEffectTool in Resources */ = {isa = PBXBuildFile; fileRef = C36834911EA9C86B00CF1D65 /* CLEffectTool */; };
+		C36834981EA9C86B00CF1D65 /* CLFilterTool in Resources */ = {isa = PBXBuildFile; fileRef = C36834921EA9C86B00CF1D65 /* CLFilterTool */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +71,12 @@
 		C36834871EA8DFA700CF1D65 /* YFImageToolInfo+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "YFImageToolInfo+Private.m"; path = "DrawEllipse/ImageEditor/YFImageToolInfo+Private.m"; sourceTree = "<group>"; };
 		C36834891EA8E15C00CF1D65 /* YFClassList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YFClassList.h; path = DrawEllipse/Utils/YFClassList.h; sourceTree = "<group>"; };
 		C368348A1EA8E15C00CF1D65 /* YFClassList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YFClassList.m; path = DrawEllipse/Utils/YFClassList.m; sourceTree = "<group>"; };
+		C368348D1EA9C86B00CF1D65 /* CLAdjustmentTool */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CLAdjustmentTool; path = ../CLImageEditor/CLImageEditor/ImageTools/CLAdjustmentTool; sourceTree = "<group>"; };
+		C368348E1EA9C86B00CF1D65 /* CLBlurTool */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CLBlurTool; path = ../CLImageEditor/CLImageEditor/ImageTools/CLBlurTool; sourceTree = "<group>"; };
+		C368348F1EA9C86B00CF1D65 /* CLClippingTool */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CLClippingTool; path = ../CLImageEditor/CLImageEditor/ImageTools/CLClippingTool; sourceTree = "<group>"; };
+		C36834901EA9C86B00CF1D65 /* CLDrawTool */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CLDrawTool; path = ../CLImageEditor/CLImageEditor/ImageTools/CLDrawTool; sourceTree = "<group>"; };
+		C36834911EA9C86B00CF1D65 /* CLEffectTool */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CLEffectTool; path = ../CLImageEditor/CLImageEditor/ImageTools/CLEffectTool; sourceTree = "<group>"; };
+		C36834921EA9C86B00CF1D65 /* CLFilterTool */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CLFilterTool; path = ../CLImageEditor/CLImageEditor/ImageTools/CLFilterTool; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +172,19 @@
 			name = ImageEditor;
 			sourceTree = "<group>";
 		};
+		C368348C1EA9C82F00CF1D65 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				C368348D1EA9C86B00CF1D65 /* CLAdjustmentTool */,
+				C368348E1EA9C86B00CF1D65 /* CLBlurTool */,
+				C368348F1EA9C86B00CF1D65 /* CLClippingTool */,
+				C36834901EA9C86B00CF1D65 /* CLDrawTool */,
+				C36834911EA9C86B00CF1D65 /* CLEffectTool */,
+				C36834921EA9C86B00CF1D65 /* CLFilterTool */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,10 +244,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36834931EA9C86B00CF1D65 /* CLAdjustmentTool in Resources */,
 				C351654C1EA0A634006AC63E /* LaunchScreen.storyboard in Resources */,
+				C36834941EA9C86B00CF1D65 /* CLBlurTool in Resources */,
+				C36834951EA9C86B00CF1D65 /* CLClippingTool in Resources */,
 				C35165491EA0A634006AC63E /* Assets.xcassets in Resources */,
+				C36834961EA9C86B00CF1D65 /* CLDrawTool in Resources */,
 				C35165471EA0A634006AC63E /* Main.storyboard in Resources */,
+				C36834981EA9C86B00CF1D65 /* CLFilterTool in Resources */,
 				2325A7FF1EA36FAC00980C97 /* default.jpg in Resources */,
+				C36834971EA9C86B00CF1D65 /* CLEffectTool in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
