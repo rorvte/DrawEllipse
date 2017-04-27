@@ -23,6 +23,6 @@
 - (NSString*)toolTreeDescription;
 - (NSArray*)storedSubtools;
 
-- (YFImageToolInfo *)subtoolInfoWithToolName:(NSString *)toolName recursive:(BOOL)recursive;
+- (YFImageToolInfo *)subToolInfoWithToolName:(NSString *)toolName recursive:(BOOL)recursive;
 
 @end

@@ -27,13 +27,15 @@
 }
 
 - (void)pushedEditBtn {
-//    if(_imageView.image){
-        YFImageEditor *editor = [[YFImageEditor alloc]initWithImage:self.imageView.image delegate:self];
-        [self presentViewController:editor animated:YES completion:nil];
-//    }
-//    else{
-//        [self pushedNewBtn];
-//    }
+           YFImageEditor *editor = [[YFImageEditor alloc] initWithImage:_imageView.image delegate:self];
+//    YFImageEditor *editor = [[YFImageEditor alloc] initWithDelegate:self];
+    
+    
+    NSLog(@"%@", editor.toolInfo);
+    NSLog(@"%@", editor.toolInfo.toolTreeDescription);
+    
+    
+    [self presentViewController:editor animated:YES completion:nil];
 }
 
 - (void)pushedSaveBtn{

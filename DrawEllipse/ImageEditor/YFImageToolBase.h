@@ -19,6 +19,10 @@
 @property (nonatomic,weak) YFImageEditorViewController *editor;
 @property (nonatomic,weak) YFImageToolInfo *toolInfo;
 
+- (void)setup;
+- (void)cleanup;
+- (void)executeWithCompletionBlock:(void(^)(UIImage *image, NSError *error, NSDictionary *userInfo))completionBlock;
+
 - (id)initWithImageEditor:(YFImageEditorViewController*)editor withToolInfo:(YFImageToolInfo*)toolInfo;
 
 @end

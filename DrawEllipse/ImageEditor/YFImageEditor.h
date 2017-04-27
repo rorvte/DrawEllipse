@@ -8,14 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+#import "YFImageToolInfo.h"
+#import "CLImageEditorTheme.h"
+
 @protocol YFImageEditorDelegate;
 @protocol YFImageEditorTransitionDelegate;
 
 @interface YFImageEditor : UIViewController
 
 @property (nonatomic, weak) id<YFImageEditorDelegate> delegate;
-- (id)initWithImage:(UIImage *)image;
-- (id)initWithImage:(UIImage *)image delegate:(id<YFImageEditorDelegate>)delegate;
+@property (nonatomic, readonly) CLImageEditorTheme *theme;
+@property (nonatomic, readonly) YFImageToolInfo *toolInfo;
+
+- (id)initWithImage:(UIImage*)image;
+- (id)initWithImage:(UIImage*)image delegate:(id<YFImageEditorDelegate>)delegate;
+- (id)initWithDelegate:(id<YFImageEditorDelegate>)delegate;
 
 - (void)showInViewController:(UIViewController<YFImageEditorTransitionDelegate>*)controller withImageView:(UIImageView*)imageView;
 
@@ -23,9 +30,8 @@
 
 @protocol YFImageEditorDelegate <NSObject>
 @optional
-- (void)imageEditor:(YFImageEditor *)editor didFinishEdittingWithImage:(UIImage *)image;
-- (void)imageEditorDidCancel:(YFImageEditor *)editor;
-- (id)initWithDelegate:(id<YFImageEditorDelegate>)delegate;
+- (void)imageEditor:(YFImageEditor*)editor didFinishEdittingWithImage:(UIImage*)image;
+- (void)imageEditorDidCancel:(YFImageEditor*)editor;
 @end
 
 @protocol YFImageEditorTransitionDelegate <NSObject>

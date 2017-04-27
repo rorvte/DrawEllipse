@@ -85,7 +85,7 @@
     return self.subtools;
 }
 
-- (YFImageToolInfo *)subtoolInfoWithToolName:(NSString *)toolName recursive:(BOOL)recursive{
+- (YFImageToolInfo *)subToolInfoWithToolName:(NSString *)toolName recursive:(BOOL)recursive{
     YFImageToolInfo *result = nil;
     for(YFImageToolInfo *sub in self.subtools){
         if([sub.toolName isEqualToString:toolName]){
@@ -93,7 +93,7 @@
             break;
         }
         if(recursive){
-            result = [sub subtoolInfoWithToolName:toolName recursive:recursive];
+            result = [sub subToolInfoWithToolName:toolName recursive:recursive];
             if(result){
                 break;
             }

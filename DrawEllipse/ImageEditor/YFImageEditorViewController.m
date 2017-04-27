@@ -67,6 +67,27 @@
     return self;
 }
 
+- (id)initWithDelegate:(id<YFImageEditorDelegate>)delegate
+{
+    self = [self init];
+    if (self){
+        self.delegate = delegate;
+    }
+    return self;
+}
+
+#pragma mark- Tool actions
+
+- (void)setCurrentTool:(YFImageToolBase *)currentTool
+{
+    if(currentTool != _currentTool){
+        [_currentTool cleanup];
+        _currentTool = currentTool;
+        [_currentTool setup];
+        
+        [self swapToolBarWithEditting:(_currentTool!=nil)];
+    }
+}
 
 #pragma mark- Custom initialization
 - (void)initNavigationBar {
@@ -149,18 +170,12 @@
     CGFloat W = 70;
     CGFloat H = _menuView.height;
     
-    int toolCount = 13;
+    int toolCount = 0;
     CGFloat padding = 0;
     
-<<<<<<< Updated upstream
     for(YFImageToolInfo *info in self.toolInfo.storedSubtools) {
         if(info.available) {toolCount++;}
     }
-=======
-//    for(YFImageToolInfo *info in self.toolInfo.storedSubTools) {
-//        if(info.available) {toolCount++;}
-//    }
->>>>>>> Stashed changes
     
     CGFloat diff = _menuView.frame.size.width - toolCount * W;
     if (0<diff && diff<2*W) {
@@ -199,6 +214,70 @@
      ];
     
     [self setupToolWithToolInfo:view.toolInfo];
+}
+
+#pragma mark- Menu actions
+
+- (void)swapMenuViewWithEditting:(BOOL)editting
+{
+    [UIView animateWithDuration:0.2
+                     animations:^{
+                         if(editting){
+                             _menuView.transform = CGAffineTransformMakeTranslation(0, self.view.height-_menuView.top);
+                         }
+                         else{
+                             _menuView.transform = CGAffineTransformIdentity;
+                         }
+                     }
+     ];
+}
+
+- (void)swapNavigationBarWithEditting:(BOOL)editting
+{
+    if(self.navigationController==nil){
+        return;
+    }
+    
+    if(editting){
+        _navigationBar.hidden = NO;
+        _navigationBar.transform = CGAffineTransformMakeTranslation(0, -_navigationBar.height);
+        
+        [UIView animateWithDuration:0.2
+                         animations:^{
+                             self.navigationController.navigationBar.transform = CGAffineTransformMakeTranslation(0, -self.navigationController.navigationBar.height-20);
+                             _navigationBar.transform = CGAffineTransformIdentity;
+                         }
+         ];
+    }
+    else{
+        [UIView animateWithDuration:0.2
+                         animations:^{
+                             self.navigationController.navigationBar.transform = CGAffineTransformIdentity;
+                             _navigationBar.transform = CGAffineTransformMakeTranslation(0, -_navigationBar.height);
+                         }
+                         completion:^(BOOL finished) {
+                             _navigationBar.hidden = YES;
+                             _navigationBar.transform = CGAffineTransformIdentity;
+                         }
+         ];
+    }
+}
+
+- (void)swapToolBarWithEditting:(BOOL)editting
+{
+    [self swapMenuViewWithEditting:editting];
+    [self swapNavigationBarWithEditting:editting];
+    
+    if(self.currentTool){
+        UINavigationItem *item  = [[UINavigationItem alloc] initWithTitle:self.currentTool.toolInfo.title];
+//        item.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:[CLImageEditorTheme localizedString:@"CLImageEditor_OKBtnTitle" withDefault:@"OK"] style:UIBarButtonItemStyleDone target:self action:@selector(pushedDoneBtn:)];
+//        item.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:[CLImageEditorTheme localizedString:@"CLImageEditor_BackBtnTitle" withDefault:@"Back"] style:UIBarButtonItemStylePlain target:self action:@selector(pushedCancelBtn:)];
+        
+        [_navigationBar pushNavigationItem:item animated:(self.navigationController==nil)];
+    }
+    else{
+        [_navigationBar popNavigationItemAnimated:(self.navigationController==nil)];
+    }
 }
 
 - (void)setupToolWithToolInfo:(YFImageToolInfo*)info {
