@@ -10,6 +10,7 @@
 		2325A7FF1EA36FAC00980C97 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2325A7FE1EA36FAC00980C97 /* default.jpg */; };
 		233204B21EAE618900B8CEC4 /* CLRotateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 233204B11EAE618900B8CEC4 /* CLRotateTool.m */; };
 		233204B81EAFA88900B8CEC4 /* CLImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 233204B71EAFA88900B8CEC4 /* CLImageEditorTheme.m */; };
+		C30B54901EB8B8110004D0D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C30B548F1EB8B8110004D0D0 /* icon.png */; };
 		C326A5961EA8752800C4A02B /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A5931EA8752800C4A02B /* UIImage+Utility.m */; };
 		C326A5971EA8752800C4A02B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A5951EA8752800C4A02B /* UIView+Frame.m */; };
 		C326A5A31EA8757900C4A02B /* YFImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = C326A5991EA8757900C4A02B /* YFImageEditor.m */; };
@@ -40,6 +41,7 @@
 		233204B11EAE618900B8CEC4 /* CLRotateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRotateTool.m; sourceTree = "<group>"; };
 		233204B61EAFA88900B8CEC4 /* CLImageEditorTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLImageEditorTheme.h; path = ../CLImageEditor/CLImageEditor/CLImageEditorTheme.h; sourceTree = "<group>"; };
 		233204B71EAFA88900B8CEC4 /* CLImageEditorTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLImageEditorTheme.m; path = ../CLImageEditor/CLImageEditor/CLImageEditorTheme.m; sourceTree = "<group>"; };
+		C30B548F1EB8B8110004D0D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C326A5921EA8752800C4A02B /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Utility.h"; path = "DrawEllipse/Utils/UIImage+Utility.h"; sourceTree = "<group>"; };
 		C326A5931EA8752800C4A02B /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Utility.m"; path = "DrawEllipse/Utils/UIImage+Utility.m"; sourceTree = "<group>"; };
 		C326A5941EA8752800C4A02B /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "DrawEllipse/Utils/UIView+Frame.h"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				233204B61EAFA88900B8CEC4 /* CLImageEditorTheme.h */,
 				233204B71EAFA88900B8CEC4 /* CLImageEditorTheme.m */,
+				C30B548F1EB8B8110004D0D0 /* icon.png */,
 				C35165631EA5D00F006AC63E /* ImageEditor */,
 				C35165621EA0F3FB006AC63E /* Utils */,
 				C351653B1EA0A634006AC63E /* DrawEllipse */,
@@ -172,19 +175,6 @@
 			name = ImageEditor;
 			sourceTree = "<group>";
 		};
-		C368348C1EA9C82F00CF1D65 /* tools */ = {
-			isa = PBXGroup;
-			children = (
-				C368348D1EA9C86B00CF1D65 /* CLAdjustmentTool */,
-				C368348E1EA9C86B00CF1D65 /* CLBlurTool */,
-				C368348F1EA9C86B00CF1D65 /* CLClippingTool */,
-				C36834901EA9C86B00CF1D65 /* CLDrawTool */,
-				C36834911EA9C86B00CF1D65 /* CLEffectTool */,
-				C36834921EA9C86B00CF1D65 /* CLFilterTool */,
-			);
-			name = tools;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,6 +240,7 @@
 				C36834951EA9C86B00CF1D65 /* CLClippingTool in Resources */,
 				C35165491EA0A634006AC63E /* Assets.xcassets in Resources */,
 				C36834961EA9C86B00CF1D65 /* CLDrawTool in Resources */,
+				C30B54901EB8B8110004D0D0 /* icon.png in Resources */,
 				C35165471EA0A634006AC63E /* Main.storyboard in Resources */,
 				C36834981EA9C86B00CF1D65 /* CLFilterTool in Resources */,
 				2325A7FF1EA36FAC00980C97 /* default.jpg in Resources */,

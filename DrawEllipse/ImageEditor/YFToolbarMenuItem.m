@@ -43,6 +43,37 @@
     return self;
 }
 
+- (NSString*)title
+{
+    return _titleLabel.text;
+}
+
+- (void)setTitle:(NSString *)title
+{
+    _titleLabel.text = title;
+}
+
+- (UIImageView*)iconView
+{
+    return _iconView;
+}
+
+- (UIImage*)iconImage
+{
+    return _iconView.image;
+}
+
+- (void)setIconImage:(UIImage *)iconImage
+{
+    _iconView.image = iconImage;
+}
+
+- (void)setUserInteractionEnabled:(BOOL)userInteractionEnabled
+{
+    [super setUserInteractionEnabled:userInteractionEnabled];
+    self.alpha = (userInteractionEnabled) ? 1 : 0.3;
+}
+
 - (void)setToolInfo:(YFImageToolInfo *)toolInfo
 {
     [super setToolInfo:toolInfo];
@@ -61,7 +92,7 @@
     if(selected != _selected){
         _selected = selected;
         if(selected){
-            self.backgroundColor = [UIColor redColor];
+            self.backgroundColor = [UIColor grayColor];
         }
         else{
             self.backgroundColor = [UIColor clearColor];

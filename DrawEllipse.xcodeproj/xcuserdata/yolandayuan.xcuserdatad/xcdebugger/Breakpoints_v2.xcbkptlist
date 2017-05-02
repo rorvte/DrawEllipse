@@ -73,44 +73,92 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DrawEllipse/ImageEditor/YFImageEditorViewController.m"
-            timestampString = "514918398.965867"
+            filePath = "DrawEllipse/ImageEditor/YFImageToolBase.m"
+            timestampString = "515422314.819532"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "-refreshToolSettings"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-initWithImageEditor:withToolInfo:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrawEllipse/ImageEditor/YFImageToolInfo.m"
+            timestampString = "515422448.075047"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-subToolInfoWithToolName:recursive:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrawEllipse/ImageEditor/YFImageToolInfo.h"
+            timestampString = "515422492.538094"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-subToolInfoWithToolName:recursive:"
+            landmarkType = "6">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrawEllipse/ImageEditor/YFImageToolInfo.h"
+            timestampString = "515422516.664438"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "iconImagePath"
+            landmarkType = "24">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[YFImageEditorViewController refreshToolSettings]"
+                  symbolName = "-[YFImageToolInfo iconImagePath]"
                   moduleName = "DrawEllipse"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yolandayuan/Documents/DrawEllipse/DrawEllipse/ImageEditor/YFImageEditorViewController.m"
-                  timestampString = "514918424.058434"
+                  urlString = "file:///Users/yolandayuan/Documents/DrawEllipse/DrawEllipse/ImageEditor/YFImageToolInfo.h"
+                  timestampString = "515422932.919666"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "185"
-                  endingLineNumber = "185"
-                  offsetFromSymbolStart = "1306">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[YFImageEditorViewController refreshToolSettings]"
+                  symbolName = "-[YFImageToolInfo setIconImagePath:]"
                   moduleName = "DrawEllipse"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yolandayuan/Documents/DrawEllipse/DrawEllipse/ImageEditor/YFImageEditorViewController.m"
-                  timestampString = "514918424.062028"
+                  urlString = "file:///Users/yolandayuan/Documents/DrawEllipse/DrawEllipse/ImageEditor/YFImageToolInfo.h"
+                  timestampString = "515422932.921496"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "185"
-                  endingLineNumber = "185"
-                  offsetFromSymbolStart = "1314">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "49">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -122,27 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DrawEllipse/ImageEditor/YFImageEditorViewController.m"
-            timestampString = "514918399.741536"
+            timestampString = "515422583.97009"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
-            landmarkName = "-refreshToolSettings"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DrawEllipse/ImageEditor/YFImageEditorViewController.m"
-            timestampString = "514918413.670212"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-refreshToolSettings"
             landmarkType = "7">
          </BreakpointContent>
