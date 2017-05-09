@@ -21,7 +21,7 @@
 
 + (YFImageToolInfo*)toolInfoForToolClass:(Class<YFImageToolProtocol>)toolClass;
 {
-    if([(Class)toolClass conformsToProtocol:@protocol(YFImageToolProtocol)] && [toolClass isAvailable]){
+    if([(Class)toolClass isAvailable]){
         YFImageToolInfo *info = [YFImageToolInfo new];
         info.toolName  = NSStringFromClass(toolClass);
         info.title     = [toolClass defaultTitle];

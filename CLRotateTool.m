@@ -28,7 +28,8 @@ static NSString* const kCLRotateToolCropRotate = @"cropRotateEnabled";
 
 + (NSString*)defaultTitle
 {
-    return @"haha";
+    
+    return nil;
 }
 
 + (BOOL)isAvailable

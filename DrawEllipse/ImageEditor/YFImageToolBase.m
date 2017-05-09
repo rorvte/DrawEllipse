@@ -22,7 +22,7 @@
 
 + (NSString*)defaultIconImagePath
 {
-    return [NSString stringWithFormat:@"icon.png"];
+    return nil;
 }
 
 + (CGFloat)defaultDockedNumber

@@ -49,8 +49,19 @@
     }
 }
 
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        self.toolInfo = [YFImageToolInfo toolInfoForToolClass:[self class]];
+//    }
+//    return self;
+//}
+
 - (id)init{
-    self = [self initWithNibName:nil bundle:nil];
+//    self = [self initWithNibName:nil bundle:nil];
+    if (self){
+        self.toolInfo = [YFImageToolInfo toolInfoForToolClass:[self class]];
+    }
     return self;
 }
 

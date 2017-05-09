@@ -27,15 +27,16 @@
 }
 
 - (void)pushedEditBtn {
-           YFImageEditor *editor = [[YFImageEditor alloc] initWithImage:_imageView.image delegate:self];
-//    YFImageEditor *editor = [[YFImageEditor alloc] initWithDelegate:self];
+//           YFImageEditor *editor = [[YF ImageEditor alloc] initWithImage:_imageView.image delegate:self];
+    YFImageEditor *editor = [[YFImageEditor alloc] initWithDelegate:self];
     
     
     NSLog(@"%@", editor.toolInfo);
     NSLog(@"%@", editor.toolInfo.toolTreeDescription);
     
     
-    [self presentViewController:editor animated:YES completion:nil];
+//    [self presentViewController:editor animated:YES completion:nil];
+    [editor showInViewController:self withImageView:_imageView];
 }
 
 - (void)pushedSaveBtn{
